@@ -1,6 +1,6 @@
 # 2022 Nomadcoder Momentum Clone Lecture
 
-- Use html / css / Vanilla js
+- Use HTML5 / CSS3 / Vanilla js
 
 - Simple Login
 - Clock
