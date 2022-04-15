@@ -8,9 +8,17 @@
     <link href="style/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="login-page"></div>
+    <div class="login-page">
+        <form class="login-page-get-name">
+            <label for="login-here" class="login-page-ask">
+                <h1>Hello, what's your name?</h1>
+            </label>
+            <input id="login-here" required type="text" />
+            <input class="login-page-btn" type="submit" value="Continue" />
+        </form>
+    </div>
     <div class="backgrounds"></div>
-    <div class="apps">
+    <div id="home" class="apps">
         <div class="top-area">
             <div class="top-area-search">111</div>
             <div class="top-area-weather">222</div>

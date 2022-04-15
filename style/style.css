@@ -1,5 +1,15 @@
-*{
-    margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+@import "setting/reset.css";
+@import "setting/variable.css";
+@import "login.css";
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#home{
+    display: none;
 }
 .apps{
     width:100vw;
@@ -7,7 +17,7 @@
     padding:18px;
     box-sizing: border-box;
     position:absolute;
-    top:0;
+    top:0;     
     left:0;
     display: flex;
     flex-direction: column;
