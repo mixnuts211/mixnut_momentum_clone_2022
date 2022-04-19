@@ -8,10 +8,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-#home{
-    display: none;
-}
-.apps{
+.home-page{
     width:100vw;
     height: 100vh;
     padding:18px;
@@ -23,13 +20,13 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.top-area, .bottom-area{
+.home-page-top-area, .home-page-bottom-area{
     width:100%;
     height: 50px;
     display: flex;
     justify-content:space-between;
 }
-.middle-area{
+.home-page-middle-area{
     width:100%;
     height: 400px;
     margin-top: 8vw;
@@ -51,4 +48,8 @@ body{
 }
 .focus-today{
     height:90px;
+}
+
+.page-hidden{
+    display: none;
 }

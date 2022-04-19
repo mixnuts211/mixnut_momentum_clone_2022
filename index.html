@@ -8,31 +8,32 @@
     <link href="style/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="login-page">
+    <div class="backgrounds"></div>
+    <div class="login-page page-hidden">
         <form class="login-page-get-name">
-            <label for="login-here" class="login-page-ask">
+            <div class="login-page-ask">
                 <h1>Hello, what's your name?</h1>
-            </label>
-            <input id="login-here" required type="text" />
-            <input class="login-page-btn" type="submit" value="Continue" />
+            </div>
+            <input class="login-here" required type="text" />
+            <button class="login-page-btn">Continue</button>
         </form>
     </div>
-    <div class="backgrounds"></div>
-    <div id="home" class="apps">
-        <div class="top-area">
+    <div class="home-page page-hidden">
+        <div class="home-page-top-area">
             <div class="top-area-search">111</div>
             <div class="top-area-weather">222</div>
         </div>
-        <div class="middle-area">
+        <div class="home-page-middle-area">
             <div class="clock"><h1>00:00:00</h1></div>
             <div class="greeting">444</div>
             <div class="focus-today">What is your main focus for today?</div>
         </div>
-        <div class="bottom-area">
+        <div class="home-page-bottom-area">
             <div>555</div>
             <div class="quotes">random</div>
             <article class="todo">todo list</article>
         </div>
     </div>
+    <script src="js/login.js"></script>
 </body>
 </html>
