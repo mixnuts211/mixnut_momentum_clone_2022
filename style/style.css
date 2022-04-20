@@ -53,3 +53,16 @@ body{
 .page-hidden{
     display: none;
 }
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quote-content{
+    font-size: 12pt;
+}
+.quote-author{
+    font-size: 10pt;
+    line-height: 35px;
+    color:gray;
+}
