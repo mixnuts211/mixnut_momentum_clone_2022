@@ -70,3 +70,35 @@ body{
     line-height: 35px;
     color:gray;
 }
+
+/*todo list*/
+.todo{
+    position:relative;
+}
+.todo-wrap{
+    background-color:white;
+    border-radius: 5px;
+    position:absolute;
+    width: 320px;
+    height: 100px;
+    top: -120px;
+    right: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: black;
+}
+.todo-wrap-title{
+    margin-bottom: 15px;
+    font-size: 14pt;
+}
+.todo-wrap-write-here{
+    border-style: none;
+    font-size: 12pt;
+    opacity: 50%;
+    width:90%;
+}
+.todo-wrap-btn{
+    border-style: none;
+    background-color: white;
+    margin-top: 10px;
+}
