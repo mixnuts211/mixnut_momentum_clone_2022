@@ -10,8 +10,9 @@ function saveToDo(){
 
 function showTodoList(newTodoList){
     const li = document.createElement("li");
+    li.id = newTodoList.id;
     const span = document.createElement("span");
-    span.innerText = newTodoList;
+    span.innerText = newTodoList.text;
     const input = document.createElement("input");
     input.setAttribute("type", "checkbox");
     const deletBtn = document.createElement("div");
@@ -26,14 +27,20 @@ function showTodoList(newTodoList){
 function deletTodo(event){
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDo();
 }
 
 function todoBtnHandler(event){
     event.preventDefault();
     const newTodoList = todoWrite.value;
     todoWrite.value = "";
-    toDos.push(newTodoList);
-    showTodoList(newTodoList);
+    const newTodoObject = {
+        text : newTodoList,
+        id : Date.now()
+    };
+    toDos.push(newTodoObject);
+    showTodoList(newTodoObject);
     saveToDo();
 }
 
@@ -46,8 +53,4 @@ if (getSavedToDo !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(showTodoList);
 }
-
-
-//-todo list-
-//localStorge에 저장해서 불러오기/삭제하기
 
