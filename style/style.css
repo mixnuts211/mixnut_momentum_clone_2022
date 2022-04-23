@@ -43,12 +43,17 @@ body{
 .clock{
     width:600px;
     height: 180px;
-    font-size: 4em;
+    font-size: 100pt;
     line-height: 180px;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 .greeting{
     height: 70px;
     margin-bottom: 60px;
+    font-size: 40pt;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 .focus-today{
     height:90px;
@@ -57,6 +62,37 @@ body{
 .page-hidden{
     display: none;
 }
+
+/*weather*/
+.top-area-weather{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+.weather-icon, .weather-geo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    justify-content: space-between;
+}
+.weather-icon img{
+    width: 40px;
+    height: 40px;
+    order:-1;
+    margin-top: -6px;
+}
+.weather-geo-temperature{
+    font-size: 20pt;
+    margin-bottom: 7px;
+    letter-spacing :-1px;
+}
+.weather-icon-text, .weather-geo-location{
+    font-size: 10pt;
+}
+
+/*quote*/
 .quote{
     display: flex;
     flex-direction: column;
