@@ -8,7 +8,9 @@
     <link href="style/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="backgrounds"></div>
+    <div class="backgrounds">
+        <!--randomImg-->
+    </div>
     <div class="login-page page-hidden">
         <form class="login-page-get-name">
             <div class="login-page-ask">
@@ -21,7 +23,14 @@
     <div class="home-page page-hidden">
         <div class="home-page-top-area">
             <div class="top-area-search">Link and search</div>
-            <div class="top-area-weather">Weather API</div>
+            <div class="top-area-weather">
+                <div class="weather-icon">
+                    <span class="weather-icon-text"></span>
+                    <!--iconImg-->
+                </div>
+                <span class="weather-temperature"></span>
+                <span class="weather-location"></span>
+            </div>
         </div>
         <div class="home-page-middle-area">
             <div class="clock"><h2>00:00:00</h2></div>
@@ -58,5 +67,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
