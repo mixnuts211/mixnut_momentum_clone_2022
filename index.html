@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum</title>
     <link href="style/style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/55a94c20a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="backgrounds">
@@ -22,7 +23,14 @@
     </div>
     <div class="home-page page-hidden">
         <div class="home-page-top-area">
-            <div class="top-area-search">Link and search</div>
+            <div class="top-area-search">
+                <form class="search-wrap">
+                    <button class="search-btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                    </button>
+                    <input class="search-write" required placeholder="구글에서 검색" type="text" text/>
+                </form>
+            </div>
             <div class="top-area-weather">
                 <div class="weather-icon">
                     <span class="weather-icon-text"></span>
@@ -37,7 +45,13 @@
         <div class="home-page-middle-area">
             <div class="clock"><h2>00:00:00</h2></div>
             <div class="greeting"></div>
-            <div class="focus-today">What is your main focus for today?</div>
+            <form class="focus-today">
+                <div class="focus-today-ask">
+                    <h3 class="focus-today-sm-font">오늘의 주요 할일은 무엇인가요?</h3>
+                </div>
+                <input class="focus-today-here page-hidden" required type="text" />
+                <!--span focusTodo-->
+            </form>
         </div>
         <div class="home-page-bottom-area">
             <div><!--Made with 'NomadCoder -  Momentum clone' class-->blank</div>
@@ -47,7 +61,7 @@
             </div>
             <article class="todo">
                 <div class="todo-wrap">
-                    <div class="todo-wrap-title">Today</div>
+                    <div class="todo-wrap-title">오늘</div>
                     <form class="todo-wrap-get-todo">
                         <ul class="todo-wrap-list">
                             <!--<li>
@@ -56,18 +70,19 @@
                                 <div>x</div>
                             </li>-->
                         </ul>
-                        <input class="todo-wrap-write-here" type="text" placeholder="New Todo" required/>
+                        <input class="todo-wrap-write-here" type="text" placeholder="새로운 할 일" required/>
                         <button class="todo-wrap-btn">+</button>
                     </form>
                 </div>
-                <h3>Todo</h3>
+                <h6>오늘 할 일</h6>
             </article>
         </div>
-    </div>
     <script src="js/login.js"></script>
+    <script src="js/search.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/focus.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
 </body>

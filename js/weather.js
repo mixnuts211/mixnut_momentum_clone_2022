@@ -21,7 +21,7 @@ function onGeoTrue(position){
 }
 
 function onGeoFalse(){
-    alert("Can't give you weather infomation");
+    alert("위치 확인이 거절되어 날씨 정보를 제공드릴 수 없습니다.");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoTrue, onGeoFalse);

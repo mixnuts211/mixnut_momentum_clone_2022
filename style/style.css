@@ -9,8 +9,14 @@ body{
     color:white;
 }
 .backgrounds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position:absolute;
     z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 .home-page{
     width:100vw;
@@ -33,25 +39,87 @@ body{
 .home-page-middle-area{
     width:100%;
     height: 400px;
-    margin-top: 8vw;
+    margin-top: 7vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.focus-today-ask{
+    font-size: 25pt;
+    margin-bottom: 10px;
+    letter-spacing :-1px;
+}
+.focus-today-here{
+    width:400px;
+    height: 50px;
+    border-style: none;
+    border-bottom: 2.5px solid white;
+    font-size: 28pt;
+    color:white;
+    font-weight: 500;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing :-1px;
+}
+.focus-today-sm-font{
+    font-size: 17pt;
+}
+.focus-today span{
+    font-size: 28pt;
+    font-weight: 500;
+}
+
+/*search*/
+.search-wrap{
+    position: relative;
+}
+.search-btn{
+    position:absolute;
+    top:5px;
+    left:0;
+    border-style: none;
+    background-color: transparent;
+    color:white;
+}
+.search-write{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 200px;
+    border-style: none;
+    border-bottom: 2.5px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 13pt;
+    font-weight: 500;
+    padding: 5px;
+    padding-left: 33px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+.search-write:hover{
+    opacity: 50%;
+}
+.search-write:focus{
+    opacity: 100%;
+}
+.search-write::placeholder {
+    color: gray;
+  }
 .clock{
     width:600px;
     height: 180px;
     font-size: 100pt;
-    line-height: 180px;
+    line-height: 170px;
     font-weight: 500;
     letter-spacing: -1px;
 }
 .greeting{
     height: 70px;
-    margin-bottom: 60px;
-    font-size: 40pt;
+    margin-bottom: 50px;
+    font-size: 35pt;
     font-weight: 500;
     letter-spacing: -1px;
 }
