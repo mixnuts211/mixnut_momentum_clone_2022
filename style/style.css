@@ -189,6 +189,9 @@ body{
 }
 
 /*todo list*/
+h6{
+    cursor:pointer;
+}
 .todo{
     position:relative;
     width: 20%;
@@ -200,8 +203,7 @@ body{
     border-radius: 5px;
     position:absolute;
     width: 320px;
-    height: auto;
-    bottom: 70px;
+    bottom: 50px;
     right: 0px;
     padding: 20px;
     box-sizing: border-box;
@@ -221,6 +223,11 @@ body{
     border-style: none;
     background-color: white;
     margin-top: 10px;
+}
+.todo-wrap-list{
+    height: auto;
+    max-height: 300px;
+    overflow: scroll;
 }
 .todo-wrap-list li{
     display: flex;

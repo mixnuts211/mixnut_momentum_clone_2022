@@ -2,6 +2,12 @@ const todoForm = document.querySelector(".todo-wrap-get-todo")
 const todoWrite = document.querySelector("input.todo-wrap-write-here");
 const addTodoBtn = document.querySelector(".todo-wrap-btn");
 const todoUl = document.querySelector(".todo-wrap-list");
+const todoWrap = document.querySelector(".todo-wrap");
+const todoToggleBtn = document.querySelector("h6");
+
+todoToggleBtn.addEventListener("click", function(){
+    todoWrap.classList.toggle("page-hidden");
+});
 
 let toDos = [];
 function saveToDo(){
